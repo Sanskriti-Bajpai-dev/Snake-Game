@@ -13,6 +13,10 @@ body{
     align-items: center;
 }
 
+#HelloAbhianv{
+    background-color: red;
+}
+
 #board{
     background: linear-gradient(rgb(191, 221, 191),rgb(229, 229, 199));
     width: 85vmin;
@@ -24,9 +28,14 @@ body{
 }
 
 .head{
-    background-color: aqua;
+    background-color: red;
+}
+
+.snake{
+    background-color: purple;
 }
 
 .food{
-    background-color: blueviolet;
+    background-color: yellow;
+
 }
