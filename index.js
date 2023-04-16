@@ -15,7 +15,7 @@ food = {x:6, y:7};
 function main(ctime){
     window.requestAnimationFrame(main);
     console.log(ctime);
-    if((ctime - lastPaintTime)/1000 < 1/speed)
+    //if((ctime - lastPaintTime)/1000 < 1/speed)
     {
         return;
     }
@@ -63,3 +63,29 @@ function gameEngine(){
 
 //Main logic starts here
 window.requestAnimationFrame(main);
+window.addEventListener('keydown', e => {
+    inputDir = {x:0, y:1} // if any button is pressed on the keyboard the snake is generated and 
+                        //it starts moving in the downward direction i.e. in the direction of y=1.
+    moveSound.play();
+    switch (e.key) { // here e is the event fired and key tells about the key pressed
+        case "ArrowUp":
+            console.log("ArrowUp")
+            break;
+        
+        case "ArrowDown":
+            console.log("ArrowDown")
+            break;
+                
+        case "ArrowLeft":
+                console.log("ArrowLeft")
+                break;
+        
+        case "ArrowRight":
+        console.log("ArrowRight")
+        break;
+            
+    
+        default:
+            break;
+    }
+                    });
